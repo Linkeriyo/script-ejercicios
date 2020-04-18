@@ -1,8 +1,9 @@
 #!/bin/bash
 
 content=`cat archivo`
-echo $content
 
-if [ "$content" = *$1* ]; then
-    echo si
+if [[ "$content" =~ .*$1.* ]]; then
+    echo ¡Has acertado!
+else
+    echo No es correcto.
 fi
