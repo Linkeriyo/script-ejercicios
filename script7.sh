@@ -9,3 +9,5 @@ if [[ -e $1 ]]; then
         echo "Se ha convertido el archivo en ejecutable."
     fi
 fi
+
+ls -l $1
