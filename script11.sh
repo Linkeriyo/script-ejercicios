@@ -1,9 +1,15 @@
 #!/bin/bash
 
-dirs=`ls -dq | wc -l`
-files=`ls -q | wc -l`
+if [[ -d $1 ]]; then
 
-files=$((files - dirs))
+    dirs=`ls -da ${1} | wc -l`
+    files=`ls -a ${1} | wc -l`
 
-echo $dirs directorios
-echo $files ficheros
+    files=$((files - dirs))
+
+    echo $dirs directorios
+    echo $files ficheros
+
+else
+    echo "Introduce una ruta de un directorio."
+fi
