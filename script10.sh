@@ -11,7 +11,7 @@ echo
 read -p "Elige una opción: " option
 
 prices=('150' '100' '100' '125' '160' '160')
-price=${prices[(($option - 1))]}
+price=${prices[$((option - 1))]}
 don=0
 money=0
 
