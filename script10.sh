@@ -29,3 +29,5 @@ while [[ $don -eq 0 ]]; do
         echo "Faltan $((price - money)) céntimos."
     fi
 done
+
+echo "Gracias buen provecho"
